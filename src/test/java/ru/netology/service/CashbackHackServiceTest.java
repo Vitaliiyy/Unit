@@ -16,7 +16,19 @@ public class CashbackHackServiceTest {
         Assert.assertEquals(expected3, service.remain(0));
     }
 
+    @org.junit.Test
+    public void ServiceTest2() {
+        CashbackHackService service = new CashbackHackService();
+        int expected1 = 990;
+        Assert.assertEquals(expected1, service.remain(10));
+        int expected2 = 1000;
+        Assert.assertEquals(expected2, service.remain(-10));
+        int expected3 = 1000;
+        Assert.assertEquals(expected3, service.remain(0));
+
 }
+}
+
 
 
 
